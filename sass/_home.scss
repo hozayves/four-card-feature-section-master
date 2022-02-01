@@ -57,6 +57,18 @@ body {
             justify-self: end;
             padding: 1rem 0 .5rem 0;
         }
+        &--cyan {
+            border-top: 4px solid map-get($colors, 'cyan')
+        }
+        &--red {
+            border-top: 4px solid map-get($colors, 'red')
+        }
+        &--orange {
+            border-top: 4px solid map-get($colors, 'orange')
+        }
+        &--blue {
+            border-top: 4px solid map-get($colors, 'blue')
+        }
     }
 }
 footer{

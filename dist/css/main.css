@@ -97,6 +97,22 @@ body {
   padding: 1rem 0 .5rem 0;
 }
 
+.cards .card--cyan {
+  border-top: 4px solid #45d3d3;
+}
+
+.cards .card--red {
+  border-top: 4px solid #ea5353;
+}
+
+.cards .card--orange {
+  border-top: 4px solid #fcaf4a;
+}
+
+.cards .card--blue {
+  border-top: 4px solid #549ef2;
+}
+
 footer {
   text-align: center;
 }
