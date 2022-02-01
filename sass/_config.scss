@@ -24,4 +24,20 @@ $colors: (
 $typography: (
     'font-size' : 15px,
     'font-family' : 'Poppins',
-)
+);
+
+@mixin medium {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin semi-medium {
+    @media screen and (min-width: 940px) and (max-width: 1440px) {
+        @content;
+    }
+}
+@mixin large {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}

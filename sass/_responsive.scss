@@ -1,0 +1,92 @@
+@include medium {
+    body {
+        height: 100%;
+        padding: 2rem
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__paragraph {
+            width: 500px;
+            align-self: center;
+        }
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+}
+@include semi-medium {
+    body{
+        padding: 3rem 3rem;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            'supervisor team-builder calculator'
+            '. karma .';
+        grid-column-gap: 2rem;
+        position: relative;
+
+        .card {
+            height: auto;
+            &--cyan {
+                grid-area: supervisor;
+                position: absolute;
+                margin-top: 40%;
+            }
+            &--red {
+                grid-area: team-builder;
+            }
+            &--orange {
+                grid-area: karma;
+            }
+            &--blue {
+                grid-area: calculator;
+                position: absolute;
+                margin-top: 40%;
+            }
+        }
+    }
+
+}
+
+@include large {
+    body{
+        padding: 3rem 3rem;
+        justify-items: center;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            'supervisor team-builder calculator'
+            '. karma .';
+        grid-column-gap: 2rem;
+        position: relative;
+        border: 1px solid red;
+        width: 1300px;
+        .card {
+            height: auto;
+            &--cyan {
+                grid-area: supervisor;
+                position: absolute;
+                margin-top: 40%;
+            }
+            &--red {
+                grid-area: team-builder;
+            }
+            &--orange {
+                grid-area: karma;
+            }
+            &--blue {
+                grid-area: calculator;
+                position: absolute;
+                margin-top: 40%;
+            }
+        }
+    }
+
+}
