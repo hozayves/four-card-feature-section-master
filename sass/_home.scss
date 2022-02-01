@@ -1,0 +1,75 @@
+body {
+    background: map-get($colors, 'very-light-gray');
+    font-family: map-get($typography, 'font-family');
+    font-size: map-get($typography, 'font-size');
+    padding: 3rem 1.5em;
+    height: 100vh;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-row-gap: 1rem;
+}
+.header {
+    text-align: center;
+    &__title {
+        font-size: 1.3rem;
+        color: map-get($colors, 'very-dark-blue');
+        &--light {
+            display: block;
+        }
+        &--bold {
+            font-weight: 700;
+        }
+    }
+    &__paragraph {
+        line-height: 1.6;
+        font-weight: 400;
+        color: map-get($colors, 'grayish-blue')
+    }
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-row-gap: 2rem;
+    margin-bottom: 2rem;
+    .card {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        color: map-get($colors, "grayish-blue");
+        box-shadow: 0px 27px 36px -34px rgba(105,105,105,0.61);
+        display: grid;
+        grid-template-columns: 1fr;
+        &__title {
+            font-weight: 700;
+            font-size: 1.5rem;
+            justify-self: start;
+            color: map-get($colors, 'very-dark-blue');
+        }
+        &__paragraph {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            font-weight: 200;
+        }
+        &__img {
+            justify-self: end;
+            padding: 1rem 0 .5rem 0;
+        }
+    }
+}
+footer{
+    text-align: center;
+    p {
+        color: map-get($colors , 'very-dark-blue')
+    }
+    a {
+        text-decoration: none;
+        color: map-get($colors, 'grayish-blue');
+        font-weight: 400;
+        &:hover {
+            color: map-get($colors, 'blue')
+        }
+    }
+}
